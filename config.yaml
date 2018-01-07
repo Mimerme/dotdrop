@@ -1,0 +1,24 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_i3:
+    dst: ~/.config/i3
+    src: config/i3
+  f_bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  f_vimrc:
+    dst: ~/.vimrc
+    src: vimrc
+  f_xinitrc:
+    dst: ~/.xinitrc
+    src: xinitrc
+profiles:
+  andros-archbox:
+    dotfiles:
+    - f_vimrc
+    - f_bashrc
+    - f_xinitrc
+    - d_i3
