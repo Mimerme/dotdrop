@@ -183,7 +183,7 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 #Start redshift
-exec --no-startup-id pgrep redshift &> /dev/null || redshift &> /dev/null &
+exec redshift &
 exec --no-startup-id imwheel
 
 # Set background
