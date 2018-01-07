@@ -9,6 +9,12 @@ dotfiles:
   f_bashrc:
     dst: ~/.bashrc
     src: bashrc
+  f_polybar_config:
+    dst: ~/.config/polybar/config
+    src: config/polybar/config
+  f_run_polybar.sh:
+    dst: ~/.run_polybar.sh
+    src: run_polybar.sh
   f_vimrc:
     dst: ~/.vimrc
     src: vimrc
@@ -22,3 +28,5 @@ profiles:
     - f_bashrc
     - f_xinitrc
     - d_i3
+    - f_polybar_config
+    - f_run_polybar.sh
